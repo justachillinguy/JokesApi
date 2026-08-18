@@ -1,0 +1,9 @@
+# Everything Vercel should NOT serve as static files.
+# Only api/, lib/, public/, vercel.json and package.json get deployed.
+
+netlify/
+netlify.toml
+server.js
+test/
+README.md
+.gitignore

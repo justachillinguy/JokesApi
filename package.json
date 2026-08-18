@@ -1,7 +1,7 @@
 {
   "name": "jokes-api",
   "version": "2.0.0",
-  "description": "A tiny, dependency-free jokes API built on Netlify Functions",
+  "description": "A tiny, dependency-free jokes API — deployable on Vercel or Netlify",
   "main": "netlify/functions/jokes.js",
   "scripts": {
     "start": "node server.js",
