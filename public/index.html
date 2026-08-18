@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jokes API — Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <h1 class="title">Jokes API</h1>
+      <p class="subtitle">A tiny serverless jokes API. This page is a live demo — every joke comes from the API.</p>
+    </header>
+
+    <section class="card" aria-live="polite">
+      <div class="badge" id="badge">Joke #– of –</div>
+      <p class="joke" id="JokesContainer">Loading…</p>
+      <button class="button" id="nextButton" type="button">Tell me another</button>
+    </section>
+
+    <section class="card endpoints">
+      <h2>Try the API yourself</h2>
+      <p class="hint">Open one of these URLs in a new tab:</p>
+      <ul class="endpoint-list">
+        <li><a href="/api/jokes">/api/jokes</a> — all 25 jokes</li>
+        <li><a href="/api/jokes/random">/api/jokes/random</a> — one random joke</li>
+        <li><a href="/api/jokes?limit=3">/api/jokes?limit=3</a> — first 3 jokes</li>
+        <li><a href="/api/jokes?search=america">/api/jokes?search=america</a> — search</li>
+        <li><a href="/api/jokes?id=7">/api/jokes?id=7</a> — joke #7</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

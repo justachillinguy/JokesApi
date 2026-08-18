@@ -1,0 +1,16 @@
+[build]
+  publish = "public"
+
+[functions]
+  directory = "netlify/functions"
+
+# Friendly /api/* URLs backed by the serverless functions
+[[redirects]]
+  from = "/api/jokes/random"
+  to = "/.netlify/functions/random"
+  status = 200
+
+[[redirects]]
+  from = "/api/jokes"
+  to = "/.netlify/functions/jokes"
+  status = 200
